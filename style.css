@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 body {
     background-color: #f3f3f3;
     margin: 0;
@@ -6,15 +7,12 @@ body {
     font-size: 19px;
 }
 
-.site_container {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr 2fr 3fr 1fr;
-    grid-template-areas:
-        "nav"
-        "image"
-        "section"
-        "footer";
+h1{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #933;
+    letter-spacing: 5px;
 }
 
 h4 {
@@ -28,42 +26,32 @@ p {
 }
 
 nav {
-    grid-area: "nav";
+
     background-color: #dbdbdb;
     padding: 30px;
     text-align: right;
 }
 
-article {
-    grid-area: "article";
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-article img {
-    height: 200px;
-    width: 190px;
-    border-radius: 50%;
-
-}
 
 section {
-    grid-area: "section";
+
     margin-bottom: 30px;
 
 }
+
+section img {
+    width: 100%;
+}
+
 
 
 footer {
-    grid-area: "footer";
     background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    
 }
 
 .menu {
@@ -98,9 +86,61 @@ footer {
 .resume {
     background-color: #fff;
     width: 85%;
+    height: 250px;
     margin: auto;
     margin-bottom: 35px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 3px 3px 9px #ddd;
 }
+
+.resume h2{
+    text-align: center;
+    color: #933;
+}
+
+.resume p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.resume p:last-child{
+    display: inline;
+    background-color: #f90;
+    padding: 5px 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+a:hover{
+    color: white;
+    transition: 0.7s;
+}
+.ronde{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.rond-versailles{
+    background-image: url('/assets/img/chateauV.jpeg');
+
+}
+
+.rond-chambord{
+    background-image: url('/assets/img/chambord.jpg');
+}
+
 
 @media screen and (max-width: 950px) {
 
@@ -144,6 +184,18 @@ footer {
         top: 40px;
         right: 40px;
         
+    }
+
+    .resume {
+        height: auto;
+        text-align: center;
+    }
+
+    .ronde{
+        width: 65%;
+        border-radius: 50px;
+        float: none;
+        margin-right: 0;
     }
 
 }
