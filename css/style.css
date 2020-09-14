@@ -61,6 +61,10 @@ footer {
     
 }
 
+.menu li .on{
+    color: #f60;
+}
+
 .menu li{
     display: inline;
     margin-left: 22px;
@@ -83,7 +87,7 @@ footer {
 
 }
 
-.resume {
+.resume, article {
     background-color: #fff;
     width: 85%;
     height: 250px;
@@ -95,12 +99,28 @@ footer {
     box-shadow: 3px 3px 9px #ddd;
 }
 
+article{
+    height: auto;
+}
+
+article img{
+    float: right;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+article h2{
+    text-align: center;
+    letter-spacing: 4px;
+}
+
 .resume h2{
     text-align: center;
     color: #933;
 }
 
-.resume p{
+.resume p, article p{
     text-align: justify;
     text-indent: 50px;
 }
@@ -186,16 +206,25 @@ a:hover{
         
     }
 
-    .resume {
-        height: auto;
-        text-align: center;
-    }
-
     .ronde{
         width: 65%;
         border-radius: 50px;
         float: none;
         margin-right: 0;
     }
+
+    .resume, article {
+        height: auto;
+        text-align: center;
+    }
+
+    article img{
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+
 
 }
